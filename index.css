@@ -110,6 +110,10 @@ main{
     width: 31.875rem;
   }
 
+  .box-paragraph{
+    width: 290px
+  }
+
   .overall-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
