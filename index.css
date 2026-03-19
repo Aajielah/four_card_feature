@@ -2,17 +2,128 @@ body{
   background-color: hsl(0, 0%, 100%);
 }
 
-/* main{
+main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 5px;
-} */
+  align-items: center;
+} 
 
 .delivery{
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   word-spacing: 1px;
   font-weight: 200;
   color: hsl(212, 6%, 44%);
+  margin-bottom: 0;
+}
+
+.heading{
+  margin: 0;
+  margin-top: 1px;
+  color: hsl(234, 12%, 34%);
+   font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  word-spacing: 1px;
+  font-weight: 600;
+}
+
+.success{
+  width: 300px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: hsl(212, 6%, 44%);
+  font-weight: 500;
+}
+
+.overall-section{
+  display: flex;
+  flex-direction: column;
+}
+.supervisors,
+.Team,
+.Karma,
+.calculator {
+   background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+   width: 300px;
+  height: 250px;
+  margin-top: 30px;
+}
+
+.box-heading{
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 0;
+   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: hsl(234, 12%, 34%);
+  font-weight: 700;
+}
+
+.box-paragraph{
+  margin-left: 20px;
+  margin-top: 5px;
+   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: hsl(212, 6%, 44%);
+  font-weight: 500;
+}
+
+.supervisors{
+  border-top: solid  hsl(180, 62%, 55%) 5px;
+}
+
+.Team{
+  border-top: solid hsl(0, 78%, 62%) 5px;
+}
+
+.Karma{
+  border-top: solid hsl(34, 97%, 64%) 5px;
+
+}
+
+.calculator{
+  border-top: solid hsl(212, 86%, 64%) 5px;
+  margin-bottom: 40px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+
+@media (min-width: 768px) {
+  .overall-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.supervisors {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.Team {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.Karma {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.calculator {
+  grid-column: 3;
+  grid-row: 2;
+}
+
 }
