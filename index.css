@@ -10,9 +10,9 @@ main{
 } 
 
 .delivery{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
-  word-spacing: 1px;
+  word-spacing: 0.0625rem;
   font-weight: 200;
   color: hsl(212, 6%, 44%);
   margin-bottom: 0;
@@ -20,19 +20,19 @@ main{
 
 .heading{
   margin: 0;
-  margin-top: 1px;
+  margin-top: 0.0625rem;
   color: hsl(234, 12%, 34%);
-   font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
-  word-spacing: 1px;
+  word-spacing: 0.0625rem;
   font-weight: 600;
 }
 
 .success{
-  width: 300px;
+  width: 18.75rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: hsl(212, 6%, 44%);
   font-weight: 500;
 }
@@ -45,85 +45,107 @@ main{
 .Team,
 .Karma,
 .calculator {
-   background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
-  border-radius: 5px;
-   width: 300px;
-  height: 250px;
-  margin-top: 30px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0.3125rem 0.3125rem rgba(0,0,0,0.1);
+  border-radius: 0.3125rem;
+  width: 18.75rem;
+  height: 14.375rem;
+  margin-top: 1.875rem;
 }
 
 .box-heading{
-  margin-left: 20px;
-  margin-top: 30px;
+  margin-left: 1.25rem;
+  margin-top: 1.875rem;
   margin-bottom: 0;
-   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
   color: hsl(234, 12%, 34%);
   font-weight: 700;
 }
 
 .box-paragraph{
-  margin-left: 20px;
-  margin-top: 5px;
-   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  margin-left: 1.25rem;
+  margin-top: 0.3125rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
   color: hsl(212, 6%, 44%);
   font-weight: 500;
+  width: 15.625rem;
 }
 
 .supervisors{
-  border-top: solid  hsl(180, 62%, 55%) 5px;
+  border-top: solid hsl(180, 62%, 55%) 0.3125rem;
 }
 
 .Team{
-  border-top: solid hsl(0, 78%, 62%) 5px;
+  border-top: solid hsl(0, 78%, 62%) 0.3125rem;
 }
 
 .Karma{
-  border-top: solid hsl(34, 97%, 64%) 5px;
-
+  border-top: solid hsl(34, 97%, 64%) 0.3125rem;
 }
 
 .calculator{
-  border-top: solid hsl(212, 86%, 64%) 5px;
-  margin-bottom: 40px;
+  border-top: solid hsl(212, 86%, 64%) 0.3125rem;
+  margin-bottom: 2.5rem;
 }
 
 .icons {
   display: flex;
   justify-content: flex-end;
-  padding-right: 20px;
-  padding-top: 30px;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
 }
 
 
 @media (min-width: 768px) {
+
+  .delivery{
+    font-size: 2.1875rem;
+  }
+  .heading{
+    font-size: 2.1875rem;
+  }
+  .success{
+    width: 31.875rem;
+  }
+
   .overall-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  align-items: center;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 6.875rem 0.3125rem 1fr;
+    gap: 1.875rem;
+    align-items: center;
+    margin-top: 5rem;
+  }
 
-.supervisors {
-  grid-column: 1;
-  grid-row: 2;
-}
+  .supervisors {
+    grid-column: 1;
+    grid-row: 2;
+  }
 
-.Team {
-  grid-column: 2;
-  grid-row: 1;
-}
+  .Team {
+    grid-column: 2;
+    grid-row: 1;
+  }
 
-.Karma {
-  grid-column: 2;
-  grid-row: 3;
-}
+  .Karma {
+    grid-column: 2;
+    grid-row: 3;
+  }
 
-.calculator {
-  grid-column: 3;
-  grid-row: 2;
-}
+  .calculator {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .supervisors,
+  .Team,
+  .Karma,
+  .calculator{
+    width: 20rem;
+    height: 13.75rem;
+    box-shadow: 0 0.3125rem 0.3125rem rgba(0,0,0, 0.2);
+  }
 
 }
